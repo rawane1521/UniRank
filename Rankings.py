@@ -32,20 +32,20 @@ st.set_page_config(
 )
 
 #importing dataset
-timesData = pd.read_csv("C:/Users/Rawane/Desktop/MSBA/Data Visualization/Assignment 1/World University Rankings/timesData.csv")
+timesData = pd.read_csv("timesData.csv")
 
 #Navigation Bar
 Menu = option_menu(None, ["Home","Dataset","Dashboard"],icons=['house',"pen","bar-chart-line"],menu_icon="cast", default_index=0, orientation="horizontal", styles={"container": {"padding": "0!important", "background-color": "#B0C4DE"},"icon": {"color": "black", "font-size": "25px"}, "nav-link": {"font-size": "15px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},"nav-link-selected": {"background-color": "#4F6272"},})
 
 #Setting Conditions 
 if Menu == "Home": st.title('World Ranking Universities')
-Image= Image.open("C:/Users/Rawane/Desktop/MSBA/Data Visualization/Assignment 2/ranking-dataset.jpg")
+Image= Image.open("ranking-dataset.jpg")
 if Menu == "Home": st.image(Image,caption='')
 if Menu == "Home": st.write("In the following Dashboard, we are going to observe the world top ranking universities criteria. The purpose behind our study is to find what are some interesting factors that could affect the ranking of the universities worldwide.")
 if Menu == "Home":st.balloons()
 if Menu == "Home":st.success("Welcome to the analysis of your future!")
 
-audio_file = open('C:/Users/Rawane/Downloads/Welcome Ringtone.oga', 'rb')
+audio_file = open('Welcome Ringtone.oga', 'rb')
 audio_bytes = audio_file.read()
 if Menu == "Home":st.audio(audio_bytes, format='audio/ogg')
 
