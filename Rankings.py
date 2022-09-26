@@ -43,7 +43,7 @@ Image= Image.open("ranking-dataset.jpg")
 if Menu == "Home": st.image(Image,caption='')
 if Menu == "Home": st.write("In the following Dashboard, we are going to observe the world top ranking universities criteria. The purpose behind our study is to find what are some interesting factors that could affect the ranking of the universities worldwide.")
 if Menu == "Home":st.balloons()
-if Menu == "Home":st.success("Welcome to the analysis of your future!")
+if Menu == "Home":st.success("Welcome to the analysis of your future! Enjoy the music while surfing.")
 
 audio_file = open('Welcome Ringtone.oga', 'rb')
 audio_bytes = audio_file.read()
