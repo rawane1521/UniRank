@@ -39,7 +39,7 @@ Menu = option_menu(None, ["Home","Dataset","Dashboard"],icons=['house',"pen","ba
 
 #Setting Conditions 
 if Menu == "Home": st.title('World Ranking Universities')
-Image= Image.open("ranking-dataset.jpg)
+Image= Image.open("ranking-dataset.jpg")
 if Menu == "Home": st.image(Image,caption='')
 if Menu == "Home": st.write("In the following Dashboard, we are going to observe the world top ranking universities criteria. The purpose behind our study is to find what are some interesting factors that could affect the ranking of the universities worldwide.")
 if Menu == "Home":st.balloons()
